@@ -1,0 +1,8 @@
+{
+  "deployment_target": "docker",
+  "hosting_preferences": "aws",
+  "budget_constraints": {
+    "monthly": 500.0,
+    "setup": 1000.0
+  }
+}

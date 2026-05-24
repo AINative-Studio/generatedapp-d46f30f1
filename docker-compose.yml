@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  app:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - API_KEY=${AINATIVE_API_KEY}
+      - ZERODB_PROJECT_ID=${AINATIVE_PROJECT_ID}
+      - SECRET_KEY=${SECRET_KEY:-change-me}
+    env_file:
+      - .env
